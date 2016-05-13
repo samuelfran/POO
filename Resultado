@@ -1,0 +1,13 @@
+package EX;
+
+public class Resultado {
+	public static void main(String[] args) {
+		Pessoa pessoa = new Pessoa();
+		pessoa.setAltura(2);
+		pessoa.setIdade(15);
+		pessoa.setNome("Dilma");
+		
+		
+	}
+}
+
