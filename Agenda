@@ -1,0 +1,25 @@
+package EX;
+
+import java.util.Scanner;
+
+public class Agenda {
+	Pessoa[] Lista = new Pessoa[10];
+	private Scanner entrada;
+	public void imprimeAgenda(){
+		for( int c = 0; c < Lista.length; c++){		
+		System.out.printf("%5d %4d \n", c, Lista[ c ]);
+		}
+	}
+	public void removePessoa(String nome){
+		
+	}
+	public void buscaPessoa(String nome){
+	
+	}
+	public void imprimePessoa(int inteiro) {
+		entrada = new Scanner(System.in);
+		System.out.println("Digite o valor: ");
+		inteiro = entrada.nextInt();
+		System.out.printf("É: %4d ", Lista[inteiro]);
+	}
+}
