@@ -2,12 +2,18 @@ package EX;
 
 public class Resultado {
 	public static void main(String[] args) {
-		Pessoa pessoa = new Pessoa();
-		pessoa.setAltura(2);
-		pessoa.setIdade(15);
-		pessoa.setNome("Dilma");
+
+		Agenda agenda = new Agenda();
 		
+		agenda.armazenaPessoa("Tio Samu", 10, 1.78f);
 		
+		agenda.armazenaPessoa("Miguelito", 21, 1.98f);
+		
+		agenda.imprimeAgenda();
+		agenda.imprimePessoa(2);
+		
+		agenda.removePessoa("Tio Samu");
+		agenda.imprimeAgenda();
 	}
 }
 
