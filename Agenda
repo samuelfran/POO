@@ -1,25 +1,39 @@
 package EX;
 
-import java.util.Scanner;
-
 public class Agenda {
 	Pessoa[] Lista = new Pessoa[10];
-	private Scanner entrada;
+	int x;
+	public void armazenaPessoa(String nome, int idade, float altura) {
+		Pessoa pessoinha = new Pessoa (nome, idade, altura);
+		Lista [x] = pessoinha;
+		x += 1;
+	}
+	
 	public void imprimeAgenda(){
-		for( int c = 0; c < Lista.length; c++){		
-		System.out.printf("%5d %4d \n", c, Lista[ c ]);
+		for(int c = 0; c < 10; c++){
+			if (Lista[c] != null){
+				System.out.println(Lista[c].getNome());
+				System.out.println(Lista[c].getIdade());
+				System.out.println(Lista[c].getAltura());
+			}
 		}
 	}
 	public void removePessoa(String nome){
-		
+		for(int x = 0; x < 10; x++){
+			if (Lista[x].getNome().equals(nome)){
+				
+				Lista[x] = null;
+			}
+		}
 	}
 	public void buscaPessoa(String nome){
-	
+		
 	}
 	public void imprimePessoa(int inteiro) {
-		entrada = new Scanner(System.in);
-		System.out.println("Digite o valor: ");
-		inteiro = entrada.nextInt();
-		System.out.printf("É: %4d ", Lista[inteiro]);
+		if (Lista[inteiro] != null){
+			System.out.printf("Nome: "+ Lista[inteiro].getNome());
+			System.out.printf("Nome: "+ Lista[inteiro].getIdade());
+			System.out.printf("Nome: "+ Lista[inteiro].getAltura());
+		}
 	}
 }
