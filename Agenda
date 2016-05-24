@@ -27,7 +27,14 @@ public class Agenda {
 		}
 	}
 	public void buscaPessoa(String nome){
-		
+	int i;
+	for(i = 0; i < 10; i++){
+	     if (Lista[i].getNome().equals(nome)){
+	     	System.out.printf("Nome: "+ Lista[i].getNome());
+		System.out.printf("Nome: "+ Lista[i].getIdade());
+		System.out.printf("Nome: "+ Lista[i].getAltura());
+	     }
+	}
 	}
 	public void imprimePessoa(int inteiro) {
 		if (Lista[inteiro] != null){
