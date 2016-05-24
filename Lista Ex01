@@ -1,0 +1,32 @@
+package Ex01;
+
+public class Equipamento {
+	public boolean ligado;
+	
+	public boolean liga(){
+		return ligado = true;
+	}
+	public boolean desliga(){
+		return ligado = false;
+		
+	}
+	
+	public class EquipamentoSonoro extends Equipamento {
+		public int volume;
+		public boolean stereo;
+		
+		public int getVolume() {
+			return volume;
+		}
+		public void setVolume(int volume) {
+			this.volume = volume;
+		}
+		public boolean Stereo(){
+			return stereo = true;
+		}
+		public boolean Mono(){
+			return stereo = false;
+		}
+		
+	}
+}
