@@ -1,32 +1,15 @@
-package Ex01;
+package exercicio1;
 
 public class Equipamento {
 	public boolean ligado;
 	
 	public boolean liga(){
+		System.out.println("ligado");
 		return ligado = true;
 	}
 	public boolean desliga(){
+		System.out.println("desligado");
 		return ligado = false;
-		
 	}
 	
-	public class EquipamentoSonoro extends Equipamento {
-		public int volume;
-		public boolean stereo;
-		
-		public int getVolume() {
-			return volume;
-		}
-		public void setVolume(int volume) {
-			this.volume = volume;
-		}
-		public boolean Stereo(){
-			return stereo = true;
-		}
-		public boolean Mono(){
-			return stereo = false;
-		}
-		
-	}
 }
