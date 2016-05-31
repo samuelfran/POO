@@ -1,0 +1,20 @@
+package exercicio1;
+
+import java.util.ArrayList;
+
+
+public class Instancia{
+
+	EquipamentoSonoro radio = new EquipamentoSonoro();
+	EquipamentoSonoro mp3 = new EquipamentoSonoro();
+	
+	public void addEquipamento(){
+	ArrayList <Equipamento> lista = new ArrayList<Equipamento>();
+	Equipamento equipamento =  new Equipamento();
+	Equipamento equipamento1 = new Equipamento();
+	lista.add(equipamento);
+	lista.add(equipamento1);
+
+	}
+	
+}
